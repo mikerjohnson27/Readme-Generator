@@ -40,9 +40,9 @@ const questions = [inquirer
         type: "list",
         message: "What license would you link to use for this project?",
         choices: [
-            "GNU AGPLv3",
-            "GNU GPLv3",
-            "GNU LGPLv3",
+            "GNU AGPL",
+            "GNU GPL",
+            "GNU LGPL",
             "Mozilla",
             "MIT",
             "Apache",
