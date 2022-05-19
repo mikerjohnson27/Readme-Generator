@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateFile = require("./utils/generatemarkdown");
+console.log('Hello! Welcome to my README markdown generator.')
 // TODO: Create an array of questions for user input
 const questions = [inquirer
     .prompt({
@@ -40,22 +41,31 @@ const questions = [inquirer
         type: "list",
         message: "What license would you link to use for this project?",
         choices: [
-            "GNU AGPL",
-            "GNU GPL",
-            "GNU LGPL",
-            "Mozilla",
+            "GNUPLv3",
             "MIT",
-            "Apache",
-            "Boost",
+            "ISC",
           ],
         name: "license"
     })];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+fs.writeFile(fileName,data,(err)=>{
+    if(err){
+        return console.log(err);
+    }
+ console.log("Great Job Now Go View Your README file");
+ });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+        inquirer.prompt(questions)
+        .then(function (userInput){
+            console.log(userInput)
+            writeToFile("README.md", generateMarkdown(userInput));
+        });
+}
 
 // Function call to initialize app
 init();
