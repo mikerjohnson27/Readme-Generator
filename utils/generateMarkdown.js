@@ -4,7 +4,8 @@ function generateMarkdown(data) {
   return `
 
   # ${data.Title}
-  #${data.subheading}
+  
+  # ${data.subheading}
 
   ## Description
 

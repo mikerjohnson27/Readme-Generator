@@ -69,7 +69,7 @@ fs.writeFile(fileName,data,(err)=>{
 function init() {
     inquirer.prompt(questions)
         .then(function (){
-            writeToFile("README.md", generateMarkdown());
+            writeToFile("./Assets/README.md", generateFile())
         });
 }
 
