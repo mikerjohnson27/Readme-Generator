@@ -1,6 +1,7 @@
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  console.log(data)
   return `
 
   # ${data.Title}
@@ -11,10 +12,8 @@ function generateMarkdown(data) {
 
   ${data.discription}
 
-  ## Table of Contents (Optional)
-
-  If your README is long, add a table of contents to make it easy for users to find what they need.
-
+  ## Table of Contents
+  
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
