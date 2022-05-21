@@ -2,29 +2,56 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  #https://img.shields.io/badge/license-${data.license}-blue
-  ##${data.Title}
 
+  # ${data.Title}
   #${data.subheading}
-  ##Table of Contents:
-  #Discription
-  #Installation
-  #Contributing
-  #Creator Contact Information(Questions)
- 
 
-  [Created By:]
-  Any questions or comments can be directed here: 
-  [Name:](${data.name})
+  ## Description
 
-  [GitHub Username:](${data.username})
+  ${data.discription}
 
-  [Contact Email:](${data.email})
+  ## Table of Contents (Optional)
 
-  [Live link can be seen here:](${data.liveLink})
+  If your README is long, add a table of contents to make it easy for users to find what they need.
 
-  
-  [ABOUT](${data.discription})
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+
+  ## Installation
+
+  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+
+  ## Usage
+
+  Provide instructions and examples for use. Include screenshots as needed. 
+
+
+  ## Credits
+
+  Links to sourses:
+
+  Links and contact information to contributors:
+
+
+  ## License
+
+  #https://img.shields.io/badge/License-${data.license}-blue
+
+  ---
+  ## Features
+
+  If your project has a lot of features, list them here.
+
+  ## How to Contribute
+
+  Please fork the repo clone to your local machien and 
+
+
+  ## Tests
+
+  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
 `;
 }

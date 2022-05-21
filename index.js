@@ -18,15 +18,23 @@ const questions = [{
         name: "discription"
     },{
         type: "input",
-        message: "What is your username?",
+        message: "Add a directions for Installation.",
+        name: "install"
+    },{
+        type: "input",
+        message: "Add a full discription of what this app is used for.",
+        name: "Usage"
+    },{
+        type: "input",
+        message: "What is your username? (More then one add a comma and space between the usernames.)",
         name: "username"
     },{
         type: "input",
-        message: "What is your email?",
+        message: "What is your email?  (More then one add a comma and space between the emails.)",
         name: "email"
     },{
         type: "input",
-        message: "What is your name?",
+        message: "What is your name? (More then one add a comma and space between the names.)",
         name: "name"
     },{
         type: "input",
