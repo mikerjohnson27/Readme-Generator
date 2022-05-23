@@ -13,7 +13,7 @@ function generateMarkdown(data) {
   ${data.discription}
 
   ## Table of Contents
-  
+
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
@@ -33,6 +33,9 @@ function generateMarkdown(data) {
   Links to sourses:
 
   Links and contact information to contributors:
+  Names: ${data.name}
+  GitHub Username: ${data.username}
+  Email: ${data.email}
 
 
   ## License
@@ -46,7 +49,7 @@ function generateMarkdown(data) {
 
   ## How to Contribute
 
-  Please fork the repo clone to your local machien and 
+  Please fork the repo clone to your local machine and edit the code then submit a pull request. 
 
 
   ## Tests
