@@ -7,7 +7,7 @@ console.log('Hello! Welcome to my README markdown generator.')
 const questions = [{
         type: "input",
         message: "What is the title of this heading?",
-        name: "Title"
+        name: "title"
     },{
         type:"input",
         message: "Add a one sentance discription for the sub-heading of your project.",
@@ -39,7 +39,7 @@ const questions = [{
     },{
         type: "input",
         message: "What is your name? (More then one add a comma and space between the names.)",
-        name: "name"
+        name: "names"
     },{
         type: "list",
         message: "What license would you link to use for this project?",
@@ -52,8 +52,8 @@ const questions = [{
     },{
         type: "input",
         message: "Live link to your project?",
-        name:"features"
-    },,{
+        name: "features"
+    },{
         type: "input",
         message: "What is the link to your repo?",
         name: "repoLink"
