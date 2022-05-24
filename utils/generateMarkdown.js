@@ -1,13 +1,14 @@
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data)
   return `
 
   # ${data.Title}
   
   # ${data.subheading}
 
+  #https://img.shields.io/badge/License-${data.license}-blue
+  
   ## Description
 
   ${data.discription}
@@ -15,27 +16,25 @@ function generateMarkdown(data) {
   ## Table of Contents
 
   - [Installation](#installation)
-  - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
+    [Features]{#features}
+    [Links]{#links}
 
   ## Installation
 
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-  ## Usage
-
-  Provide instructions and examples for use. Include screenshots as needed. 
-
+  ${data.install}
 
   ## Credits
 
-  Links to sourses:
+  Links to sources:
+  ${data.sources}
 
   Links and contact information to contributors:
+
   Names: ${data.name}
-  GitHub Username: ${data.username}
-  Email: ${data.email}
+  GitHub Username: [${data.username}]{https://github.com/${data.username}}
+  Email: ${data.email}(mailto:${data.email})
 
 
   ## License
@@ -44,17 +43,20 @@ function generateMarkdown(data) {
 
   ---
   ## Features
-
-  If your project has a lot of features, list them here.
+  
+  ${data.features}
 
   ## How to Contribute
 
   Please fork the repo clone to your local machine and edit the code then submit a pull request. 
 
 
-  ## Tests
+  ## Links
 
-  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+  Live link: ${data.liveLink}
+  Repo link: ${data.repoLink}
+
+
 
 `;
 }

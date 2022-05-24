@@ -18,12 +18,16 @@ const questions = [{
         name: "discription"
     },{
         type: "input",
-        message: "Add a directions for Installation.",
+        message: "Add a directions for Installation. (Provide screenshots later)",
         name: "install"
     },{
         type: "input",
-        message: "Add a full discription of what this app is used for.",
-        name: "Usage"
+        message: "Sources used for this project.",
+        name: "sources"
+    },{
+        type: "input",
+        message: "Are there any notable features that this app may have?",
+        name: "features"
     },{
         type: "input",
         message: "What is your username? (More then one add a comma and space between the usernames.)",
@@ -37,14 +41,6 @@ const questions = [{
         message: "What is your name? (More then one add a comma and space between the names.)",
         name: "name"
     },{
-        type: "input",
-        message: "What is the link to your repo?",
-        name: "repoLink"
-    },{
-        type: "input",
-        message: "Live link to your project?",
-        name:"liveLink"
-    },{
         type: "list",
         message: "What license would you link to use for this project?",
         choices: [
@@ -53,6 +49,18 @@ const questions = [{
             "ISC",
           ],
         name: "license"
+    },{
+        type: "input",
+        message: "Live link to your project?",
+        name:"features"
+    },,{
+        type: "input",
+        message: "What is the link to your repo?",
+        name: "repoLink"
+    },{
+        type: "input",
+        message: "Live link to your project?",
+        name:"liveLink"
     }];
 
 // TODO: Create a function to write README file
@@ -61,7 +69,7 @@ fs.writeFile(fileName,data,(err)=>{
     if(err){
         return console.log(err);
     }
- console.log("Great Job Now Go View Your README file");
+ console.log("Great Job Now Go View Your README.md file in the Assets folder.");
  });
 }
 
